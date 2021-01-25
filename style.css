@@ -548,10 +548,10 @@ footer{
         line-height: 44px;
     }
     .section__heading{
-        font-size: 34px;
+        font-size: 30px;
     }
     .wrapper{
-        padding: 20px 10px;
+        padding: 50px 10px;
     }
     .rating__content{
         text-align: center;
@@ -568,6 +568,49 @@ footer{
     }
     .rating .row:not(:first-child){
         margin-top: 50px;
+    }
+    .product__photo{
+        width: 100%;
+    }
+    .gallery__item{
+        padding: 0px;
+    }
+    .gallery .button{
+        padding: 5px 0px;
+        font-size: 16px;
+    }
+    .sign-up{
+        padding: 30px 20px;
+    }
+}
+
+@media screen and (max-width: 375px){
+    .promo__heading{
+        font-size: 40px;
+        line-height: 48px;
+    }
+    .promo__subheading{
+        font-size: 22px;
+        line-height: 28px;
+    }
+    .promo__subheading span{
+        font-size: 26px;
+        line-height: 34px;
+    }
+    .section__heading{
+        font-size: 24px;
+    }
+    .rating__heading{
+        font-size: 24px;
+    }
+    text{
+        font-size: 16px;
+    }
+    .button{
+        font-size: 18px;
+    }
+    .subheading, .subheading span{
+        font-size: 18px;
     }
 }
 
