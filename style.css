@@ -12,6 +12,10 @@ ul{
 input:focus{
     outline: none;
 }
+hr{
+    margin: 0;
+    padding: 0;
+}
 .promo{
     background: url(img/bg.jpg) center/cover no-repeat;
     color: #fff;
@@ -112,6 +116,9 @@ section{
     background-color: #fff;
     border-radius: 50px;
     padding: 80px;
+}
+.rating hr{
+    display: none;
 }
 .rating img, .gallery img, .product__photo, .promo__img img{
     width: 100%;
@@ -431,9 +438,138 @@ footer{
     .sign-up__form input{
         height: 44px;
     }
-
 }
 
+@media screen and (max-width: 768px){
+    .promo__img img{
+        width: 60%;
+    }
+    .section__heading{
+        margin: 40px 0px;
+    }
+    .rating hr{
+        display: block;
+        width: 100%;
+        margin-bottom: 25px;
+    }
+    .rating .row:not(:first-child){
+        margin-top: 25px;
+    }
+    .rating__img{
+        text-align: center;
+    }
+    .rating__img img{
+        width: 70%;
+    }
+    .rating__content, .rating__stars{
+        margin-top: 30px;
+    }
+    .rating__stars{
+        text-align: center;
+    }
+    .rating__stars img{
+        width: 80%;
+    }
+    .product__info{
+        text-align: center;
+    }
+    .section__heading_inner{
+        margin: 20px 0px;
+    }
+    .line{
+        width: 70%;
+        margin: 0 auto;
+    }
+    .product__info .subheading{
+        text-align: left;
+        margin-top: 40px;
+    }
+    .product__img .subheading{
+        text-align: left;
+    }
+    .product__info .button{
+        margin-bottom: 40px;
+    }
+    .product__img{
+        text-align: center;
+    }
+    .product__photo{
+        width: 80%;
+    }
+    .gallery{
+        padding: 50px 20px;
+    }
+    .sign-up__logo{
+        text-align: center;
+    }
+    .sign-up__list{
+        margin-top: 10px;
+    }
+    .sign-up__list li{
+        margin-bottom: 10px;
+    }
+    .sign-up .subheading{
+        text-align: center;
+    }
+    .sign-up .text_small:not(:first-child){
+        margin-top: 15px;
+    }
+    .sign-up__form .button{
+        width: 35%;
+    }
+    .text{
+        font-size: 18px;
+    }
+    .sign-up__content{
+        margin-top: 20px;
+    }
+}
+
+@media screen and (max-width: 425px){
+    .promo__logo{
+        width: 160px;
+    }
+    .promo__img img{
+        width: 90%;
+    }
+    .rating__img img{
+        width: 100%;
+    }
+    .promo__heading{
+        font-size: 50px;
+        line-height: 56px;
+    }
+    .promo__subheading{
+        font-size: 28px;
+        line-height: 34px;
+    }
+    .promo__subheading span{
+        font-size: 36px;
+        line-height: 44px;
+    }
+    .section__heading{
+        font-size: 34px;
+    }
+    .wrapper{
+        padding: 20px 10px;
+    }
+    .rating__content{
+        text-align: center;
+    }
+    .text_rating{
+        text-align: left;
+    }
+    .rating__stars img{
+        margin-top: 20px;
+        width: 60%;
+    }
+    .rating hr{
+        margin-bottom: 50px;
+    }
+    .rating .row:not(:first-child){
+        margin-top: 50px;
+    }
+}
 
 @font-face {
     font-family: "Ambit-light";
