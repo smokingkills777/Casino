@@ -17,7 +17,17 @@
                         <img src="img/nirvana_logo.png" alt="" class="promo__logo">
                     </div>
                     <div class="col-1 promo__wrapper">
-                        <img src="img/menu_burger.png" alt="" class="promo__menu">
+                        <div class="menu">
+                            <div class="dropdown">
+                                <img src="img/menu_burger.png" alt="" onclick="myFunction()" class="dropbtn">
+                                <div id="myDropdown" class="dropdown-content">
+                                    <a href="#casinos">Our Casinos</a>
+                                    <a href="#yukon">Yukon Gold Casino</a>
+                                    <a href="#games">Games</a>
+                                    <a href="#feedback">Get In Touch</a>
+                                </div>
+                            </div>
+                        </div>
                     </div>
                 </div>
             </div>
@@ -47,7 +57,7 @@
             </div>
         </section>
 
-        <section class="rating">
+        <section class="rating" id="casinos">
             <div class="heading-wrapper">
                 <div class="section__heading">Best Online Casinos in Canada</div>
             </div>
@@ -110,7 +120,7 @@
             </div>
         </section>
 
-        <section class="product">
+        <section class="product" id="yukon">
             <div class="heading-wrapper">
                 <div class="section__heading">Yukon Gold Casino</div>
             </div>
@@ -159,7 +169,7 @@
             </div>
         </section>
 
-        <section class="gallery">
+        <section class="gallery" id="games">
             <div class="container-fluid">
                 <div class="row">
                     <div class="col-12 col-lg-6 gallery__item">
@@ -190,7 +200,7 @@
             </div>
         </section>
 
-        <section class="sign-up">
+        <section class="sign-up" id="feedback">
             <div class="wrapper_black">
                 <div class="container-fluid">
                     <div class="row">
@@ -221,6 +231,8 @@
         <div class="footer__content text text_small">(c) 2020 Betting Nirvana, Hordovskyi Mykhailo</div>
     </footer>
 
+
+    <script src="scripts/menu.js"></script>
     <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>

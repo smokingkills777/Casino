@@ -2,9 +2,14 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
+    scroll-behavior: smooth;
 }
 body{
     font-family: "Ambit-normal";
+}
+a, a:hover{
+    text-decoration: none;
+    color: inherit;
 }
 ul{
     list-style: none;
@@ -21,9 +26,43 @@ hr{
     color: #fff;
     padding-top: 60px;
 }
-.promo__menu{
-    float: right;
+
+.dropdown{
+    position: relative;
 }
+.dropbtn{
+    cursor: pointer;
+    float: right;
+    max-width: ;
+}
+.dropdown-content{
+    display: none;
+    margin-top: 40px;
+    background-color: rgba(0,0,0, 0.001);
+    position: absolute;
+    right: 0;
+    text-align: right;
+    z-index: 100;
+    padding: 10px 0px;
+    font-size: 20px;
+}
+.activeMenu{
+    display: flex;
+    flex-wrap: nowrap;
+    flex-direction: column;
+    width: 400px;
+}
+.activeMenu a{
+    color: #fff;
+    transition: color .2s linear;
+}
+.activeMenu a:not(:first-child){
+    margin-top: 5px;
+}
+.activeMenu a:hover{
+    color: #FFF72B;
+}
+
 .promo__main{
     margin-top: 143px;
 }
@@ -441,6 +480,9 @@ footer{
 }
 
 @media screen and (max-width: 768px){
+    .dropbtn{
+        max-width: 36px;
+    }
     .promo__img img{
         width: 60%;
     }
@@ -527,7 +569,10 @@ footer{
 
 @media screen and (max-width: 425px){
     .promo__logo{
-        width: 160px;
+        max-width: 140px;
+    }
+    .dropbtn{
+        max-width: 30px;
     }
     .promo__img img{
         width: 90%;
